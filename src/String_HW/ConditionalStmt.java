@@ -13,7 +13,7 @@ public class ConditionalStmt {
 //
                 int num = 32;
                 int divisibleBy = 15;
-                int remainder = num % divisibleBy;
+                int remainder = num % divisibleBy; 
                 if(remainder == 0) {
                     System.out.println("Divisible by " + divisibleBy);
                 } else {
