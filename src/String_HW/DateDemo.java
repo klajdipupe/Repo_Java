@@ -12,20 +12,20 @@ public class DateDemo {
        //  2. Convert this date into string format "Friday, Jun 7, 2013 12:10:56 PM"
 
 
-
-        String dateInString = "Friday, Jun 7, 2013 12:10:56 PM";
-        SimpleDateFormat formatter = new SimpleDateFormat(" dd, MM, yyyy HH:mm:ss a");
-        try {
-
-            Date date = formatter.parse(dateInString);
-            System.out.println(date);
-            System.out.println(formatter.format(date));
-
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
+//1.Convert this date into string format "Fri, June 7 2013"
+        //2. Convert this date into string format "Friday, Jun 7, 2013 12:10:56 PM"
 
 
+        //1.
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+        String date = sdf.format(new Date("Fri, June 7 2013"));
+        System.out.println(date);
+
+
+        //2.
+        SimpleDateFormat formate = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+        String time = formate.format(new Date ("Fri, June 7 2013 12:10:56"));
+        System.out.println(time);
 
     }
 }
