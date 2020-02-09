@@ -8,20 +8,24 @@ public class Practicing {
     public static void main(String[] args) {
 
 
-        SimpleDateFormat formatter = new SimpleDateFormat("dd,dd,yyyy");
-        String dateInString = "Fri, June 7 2013";
+        //1.Convert this date into string format "Fri, June 7 2013"
+        //2. Convert this date into string format "Friday, Jun 7, 2013 12:10:56 PM"
 
-        try {
 
-            Date date = formatter.parse(dateInString);
-            System.out.println(date);
-            System.out.println(formatter.format(date));
+     //1.
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+        String date = sdf.format(new Date("Fri, June 7 2013"));
+        System.out.println(date);
 
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
+
+     //2.
+        SimpleDateFormat formate = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+        String time = formate.format(new Date ("Fri, June 7 2013 12:10:56"));
+        System.out.println(time);
 
     }
 }
+
+
 
 
