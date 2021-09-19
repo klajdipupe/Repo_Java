@@ -14,6 +14,7 @@ public class Klajdi {
 
        if (kel > 30) {
            System.out.println("It's hot");
+           System.out.println("hello");
        }
 
 
