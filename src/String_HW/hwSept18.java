@@ -8,7 +8,7 @@ public class hwSept18 {
 
         // print length of sentence & does sentence start with A? H? C?
         String sentence = "Hello world";
-        int sentence_Length = sentence.length() -1 ;
+        int sentence_Length = sentence.length();
         System.out.println(" sentence length is : " + sentence_Length);
 
         boolean doesStartWith_A = sentence.startsWith("A");
@@ -68,16 +68,15 @@ public class hwSept18 {
         System.out.println(lolzz);
 
 
+/** Reverse a String
+ */
+        String word ="I love me";
+        String rev = "";
+        for (int i = word.length() - 1; i >= 0; i--)
+            rev = rev + word.charAt(i);
+
+        {    System.out.println(rev); }
 
 
-
-
-
-
-
-    }
-
-
-
-
+        }
 }

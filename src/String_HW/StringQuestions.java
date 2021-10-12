@@ -60,9 +60,6 @@ public class StringQuestions {
         System.out.println("Is Second Position Name Starts with A: " + isSecondPositionStartA);
 
 
-
-
-
     }
 
 }
